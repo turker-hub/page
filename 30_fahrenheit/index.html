@@ -6,7 +6,10 @@
 			"use strict";
 
 			// Programmiere hier die Funktion calc(number)
-			
+			function calc(celsius) {
+                return celsius;
+            }
+        
 			function clicked() {
 				var input = document.getElementById("idInput").value;
 				var output = calc(input);
@@ -18,7 +21,7 @@
 
 	<body>
 		<h1>30 Fahrenheit</h1>
-		Eingabe: <input id="idInput" type="text" value=""><br /><br />
+		Temperatur in Celsius: <input id="idInput" type="text" value="20"> Grad<br /><br />
 		<button onClick="clicked();">Berechne etwas!</button><br /><br />
 		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
 	</body>
