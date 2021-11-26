@@ -7,13 +7,14 @@
 
 			// Programmiere hier die Funktion calc(number)
             function calc(celsius) {
+                celsius = parseFloat(celsius);
                 var kelvin; 
              kelvin = celsius + 273.15;
 
              var ausgabe;
              ausgabe = "Die Temperatur von" + celsius + "Grad" + "Celsius entspricht der Temperatur" + "von" + kelvin;
 
-                return celsius;
+                return ausgabe;
             }
 			
 			function clicked() {
