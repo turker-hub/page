@@ -1,14 +1,20 @@
 <html>
 	<head>
-		<title>Berechnung</title>
+		<title>32 kelvin</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<script>
 			"use strict";
 
 			// Programmiere hier die Funktion calc(number)
-			function calc(number) {
-				return number*number;
-			}
+            function calc(celsius) {
+                var kelvin; 
+             kelvin = celsius + 273.15;
+
+             var ausgabe;
+             ausgabe = "Die Temperatur von" + celsius + "Grad" + "Celsius entspricht der Temperatur" + "von" + kelvin;
+
+                return celsius;
+            }
 			
 			function clicked() {
 				var input = document.getElementById("idInput").value;
@@ -20,8 +26,8 @@
 	</head>
 
 	<body>
-		<h1>Berechnung</h1>
-		Eingabe: <input id="idInput" type="text" value=""><br /><br />
+		<h1>32 kelvin</h1>
+		Temoeratur in Celsius: <input id="idInput" type="text" value="20"><br /><br />
 		<button onClick="clicked();">Berechne etwas!</button><br /><br />
 		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
 	</body>
