@@ -6,6 +6,22 @@
 			"use strict";
 
 			// Programmiere hier die Funktion calc(number)
+            function calc (anzahl) {
+                var ausgabe;
+                var gesamtpreis;
+
+                gesamtpreis = 399,99 * anzahl;
+
+                ausgabe = "";
+                ausgabe = ausgabe + "Es wurden " + anzahl + "Laptops verkauft. Der Preis eines Laptops beträgt 399,99 €.<br>";
+                ausgabe = ausgabe + "Der Kunde muss also insgesamt " + gesamtpreis + "€ zahlen. <br><br>"
+
+
+                return ausgabe;
+            }
+
+
+
 			
 			function clicked() {
 				var input = document.getElementById("idInput").value;
@@ -23,6 +39,7 @@
 
 		Anzahl verkaufter Laptops: <input id="idInput" type="text" value="10"><br /><br/>
 		<button onClick="clicked();">Berechne etwas!</button><br /><br />
-		<div id="idOutput">Es wurden 10 Laptops verkauft. Der Preis eines Laptops beträgt 399,99 €. <br> Der Kunde muss also insgesamt 3999,9 € zahlen.<br><br></div>
+		<div id="idOutput">Es wurden 10 Laptops verkauft. Der Preis eines Laptops beträgt 399,99 €. <br> Der Kunde muss also insgesamt 399,99 € zahlen.<br><br></div>
+        <div id="idOutput">Ab 5000,00 € erhält der Kunde 5% Rabatt: <br> Da der Gesamtpreis unter 5000,00 € liegt, erhält der Kunde keinen Rabatt.</div>
 	</body>
 </html>
