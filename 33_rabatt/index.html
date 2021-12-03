@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>33 Rabatt</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+
+			// Programmiere hier die Funktion calc(number)
+			
+			function clicked() {
+				var input = document.getElementById("idInput").value;
+				var output = calc(input);
+				document.getElementById("idOutput").innerHTML = output;
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>33 Rabatt</h1>
+        Die Infoteam GmbH verkauft Laptops zu einem Preis von 399,99 € pro Stück.
+        <br> Ab 5000,00 € erhält der Kunde 5% Rabatt vom Verkaufspreis.<br><br>
+
+		Anzahl verkaufter Laptops: <input id="idInput" type="text" value="10"><br /><br/>
+		<button onClick="clicked();">Berechne etwas!</button><br /><br />
+		<div id="idOutput">Es wurden 10 Laptops verkauft. Der Preis eines Laptops beträgt 399,99 €. <br> Der Kunde muss also insgesamt 3999,9 € zahlen.<br><br></div>
+	</body>
+</html>
