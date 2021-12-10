@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Pfund</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+
+			// Programmiere hier die Funktion calc(number)
+            function calc(euro) {
+
+                var pfund;
+                pfund = euro * 0.85;
+
+                var ausgabe;
+                ausgabe = euro +" euro " +" entsprechen " + pfund +" Pfund " + ".";
+
+                return ausgabe;
+            }
+			
+			function clicked() {
+				var input = document.getElementById("idInput").value;
+				var output = calc(input);
+				document.getElementById("idOutput").innerHTML = output;
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Pfund</h1>
+		Ein Betrag in €: <input id="idInput" type="text" value="100"><br /><br />
+		<button onClick="clicked();">Berechne etwas!</button><br /><br />
+		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
+	</body>
+</html>
