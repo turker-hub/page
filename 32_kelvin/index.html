@@ -7,15 +7,14 @@
 
 			// Programmiere hier die Funktion calc(number)
             function calc(celsius) {
-                celsius = parseFloat(celsius);
-                var kelvin; 
-             kelvin = celsius + 273.15;
+				var fahrenheit;
+				fahrenheit = celsius * (9/5) + 32;
 
-             var ausgabe;
-             ausgabe = "Die Temperatur von" + celsius + "Grad" + "Celsius entspricht der Temperatur" + "von" + kelvin;
+				var ausgabe;
+				ausgabe = " Die Temperatur von " + celsius + " Grad Celsius entspricht der Temperatur von " + fahrenheit + " Grad Fahrenheit " + " . ";
 
-                return ausgabe;
-            }
+				return ausgabe;
+			} 
 			
 			function clicked() {
 				var input = document.getElementById("idInput").value;
