@@ -12,7 +12,9 @@
                 dollar = euro * 1,4373;
 
                 var ausgabe;
-                ausgabe = 
+                ausgabe = euro + " Euro " + " entsprechen " + dollar + " US-Dollar " + " . ";
+
+				return ausgabe;
 
             }
 			
@@ -27,7 +29,7 @@
 
 	<body>
 		<h1>31 Dollar</h1>
-		Ein Betrag in €: <input id="idInput" type="text" value=""><br /><br />
+		Ein Betrag in €: <input id="idInput" type="text" value="100"><br /><br />
 		<button onClick="clicked();">Berechne etwas!</button><br /><br />
 		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
 	</body>
